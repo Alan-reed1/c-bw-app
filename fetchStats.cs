@@ -75,7 +75,7 @@ public class FetchStats
         string uuid = await getUUID(playerName);
 
         HttpClient client = new HttpClient();
-        HttpResponseMessage response = await client.GetAsync($"https://api.hypixel.net/player?key=389a0116-88ff-4379-8961-f8673203e30a&uuid={uuid}");
+        HttpResponseMessage response = await client.GetAsync($"https://api.hypixel.net/player?key=PRIVATE&uuid={uuid}");
 
         if (response.IsSuccessStatusCode)
         {
